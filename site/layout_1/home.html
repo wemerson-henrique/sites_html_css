@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Sites em HTml</title>
+</head>
+<body>
+    <h1>Exemplo de imagem responsiva</h1>
+    <picture>
+        <source media="(max-width: 360px)" srcset="codigo_pequena.jpg" type="image/jpg">
+        <source media="(max-width: 750px)" srcset="codigo_media.jpg" type="image/jpg">
+        <!--source media="(min-width: 1050px)" srcset="" type="image/jpg"-->
+        <img src="codigo_grande.jpg" alt="Imagem Respnsiva">
+    </picture>
+    Foto de Markus Spiske em Unsplash
+</body>
+</html>
