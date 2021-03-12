@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabela</title>
+    </head>
+    <body>
+        <table>
+            <th>Cadastro para Comentarios</th>
+        </table>
+        <form action="arquivo.txt" method="POST">
+            <h4>Informações Pessoais</h4>
+            <table>
+                <tr>
+                <td>Nome:</td> <td><input type="text" size="68"></td>
+                <td>Sexo:</td> <td><input type="radio" name="sexo" value="masculino">Masculino
+                <input type="radio" name="sexo"value="feminino">Feminino<td></tr>
+                <td>Endereço:</td> <td><input type="text" name="endereco" size="68"></td>
+                <td>Estado</td> <td><select name="estado">
+                    <option>selecione
+                    <option value="MG">MG
+                    <option value="SP">SP
+                    <option value="PR">PR
+                </select></td>
+            </table>
+            <h4>Informações Cadastrais</h4>
+            <table>
+                <td>Senha:</td> <td><input type="password" name="senha" size="25"></td><tr>
+                <td>Confirmar Senha:</td> <td><input type="password" name="confirmar_senha" size="25"></td><tr></tr>
+                <td>Email:</td> <td><input type="email" name="email" size="60"></td><tr>
+                <td>Confirmar Email:</td> <td><input type="email" name="confirmar_email" size="60"></td><tr>
+            </table>
+            <table>
+                <td>Quem pode visualisar o comentario?</td> <td><input type="checkbox" name="view" value="autor">Autor somente
+                    <input type="checkbox" name="view" value="leitor">Leitor somente
+                    <input type="checkbox" name="view" value="todos">Todos</td>
+            </table>
+            <textarea name="comentario" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </body>
+</html>
