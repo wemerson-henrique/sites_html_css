@@ -1,0 +1,134 @@
+/*------------------------body-------------------------*/
+body{
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+	background-color: bisque;
+}
+/*------------------------header-------------------------*/
+header{
+    background-color: purple;
+}
+/*------------------------titulo_cabecalho-------------------------*/
+#titulo_cabecalho{
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 800;
+	color: #ffffff;
+	margin-top: 0;
+	padding-top: 2%;
+}
+/*------------------------Menu-------------------------*/
+#menu{
+	border-top: solid 2px #ffffff;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: Yellowtaill, serif;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+nav ul li a{
+    display: inline;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+	font-weight: 600;
+}
+nav ul li a:hover{
+    color: #f53283;
+}
+@media screen and (min-width:768px){
+    nav{
+        flex-direction: none;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+	#corpo{
+		margin: 0;
+	}
+    /*header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }*/
+}
+/*------------------------corpo-------------------------*/
+#corpo{
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+}
+h2, h3, h4{
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+p{
+	text-align: justify;
+}
+/*------------------------img-------------------------*/
+#corpo figure{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+#corpo figure img{
+    width: 500px;
+}
+#corpo figure figcaption{
+    text-align: center;
+}
+/*------------------------table-------------------------*/
+#produtos{
+	width: 100%;
+}
+#produtos td{
+	text-align: center;
+}
+/*------------------------contato-------------------------*/
+#contato{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    mix-blend-mode: 500px;
+    margin: 0 auto;
+}
+#contato h3{
+    width: 100%;
+}
+
+/*------------------------footer-------------------------*/
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+    color: #ffffff;
+}
+footer p{
+	text-align: center;
+}
