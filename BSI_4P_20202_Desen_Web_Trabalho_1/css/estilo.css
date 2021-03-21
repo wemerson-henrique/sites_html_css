@@ -54,7 +54,14 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #f53283;
+}/*------------------------indicado menu-------------------------*/
+#menu ul #home a,
+#menu ul #sobre a,
+#menu ul #preco a,
+#menu ul #contato_menu a{
+	color: #f53283;
 }
+/*------------------------responcividade-------------------------*/
 @media screen and (min-width:768px){
     nav{
         flex-direction: none;
